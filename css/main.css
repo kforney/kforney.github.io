@@ -96,112 +96,129 @@ body {
   background-image: url("/img/branding/backgroundSmall.png");
 }
 
+
 h1 {
-  font-family: VT323;
-  font-size: 64px;
-  src: url("https://kforney.github.io/fonts/VT323-Regular.ttf");
-  color: #FFBC42;
-  text-align: center;
+font-family: VT323;
+font-size: 64px;
+color: #FFBC42;
+text-align: center;
 }
 
 h2{
-  font-family: Oswald;
-  font-size: 64px;
-  src: url("https://kforney.github.io/fonts/Oswald-Regular.ttf");
-  color: #78a1bb;
-  text-align: center;
+font-family: Oswald;
+font-size: 64px;
+color: #78a1bb;
+text-align: center;
 }
 
 h5 {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 28px;
-  src: url("https://kforney.github.io/fonts/IBMPlexMono-Regular.ttf");
-  color: #78a1bb;
-  text-align: center;
+font-family: 'IBM Plex Mono', monospace;
+font-size: 28px;
+color: #78a1bb;
+text-align: center;
 }
 
 p {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 28px;
-  src: url("https://kforney.github.io/fonts/IBMPlexSans-Regular.ttf");
-  color: #78a1bb;
-  text-align: center;
+font-family: 'IBM Plex Sans', sans-serif;
+font-size: 28px;
+color: #78a1bb;
+text-align: center;
 }
 
 iframe[src*=youtube]
 {
-    text-align: center;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    max-width:80%;
+text-align: center;
+display: block;
+margin-right: auto;
+margin-left: auto;
+max-width:80%;
 }
 
 iframe[src*=itch]
 {
-  text-align: center;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 80%;
+text-align: center;
+display: block;
+margin-right: auto;
+margin-left: auto;
+max-width: 80%;
 }
 
 .parallax {
-  position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+position: relative;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 .bg-dark {
-  --bs-dark-rgb: 40, 48, 68;
-  --bs-light-rgb: 120, 161, 187;
-  --bs-body-color: 120, 161, 187;
+--bs-dark-rgb: 40, 48, 68;
+--bs-light-rgb: 120, 161, 187;
+--bs-body-color: 120, 161, 187;
 }
 
 .navbar-brand {
-  font-family: VT323;
-  font-size: 36px;
-  src: url("../fonts/VT323-Regular.ttf");
-  color: #FFBC42;
+font-family: VT323;
+font-size: 36px;
+src: url("../fonts/VT323-Regular.ttf");
+color: #FFBC42;
 }
 
 .navbar-text {
-  font-family: VT323;
-  font-size: 36px;
-  src: url("../fonts/VT323-Regular.ttf");
-  color: #78a1bb;
+font-family: VT323;
+font-size: 36px;
+src: url("../fonts/VT323-Regular.ttf");
+color: #78a1bb;
 }
 
 .card {
-  background-color: RGBA(22, 26, 37, 70%);
-  border-radius: 30px;
+background-color: RGBA(22, 26, 37, 70%);
+border-radius: 30px;
 }
 
 .text-shadow {
-  text-shadow: #ffbc42 1px 1px 2px;
+text-shadow: #ffbc42 1px 1px 2px;
 }
 
 .youtube-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+position: relative;
+overflow: hidden;
+width: 100%;
+padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
 
 .youtube-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+width: 100%;
+height: 100%;
 }
 
 .fa-brands {
-  color: #FFBC42;
+color: #FFBC42;
+}
+
+@font-face {
+  font-family: VT323;
+  src: url("https://kforney.github.io/fonts/VT323-Regular.ttf");
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url("https://kforney.github.io/fonts/Oswald-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono', monospace;
+  src: url("https://kforney.github.io/fonts/IBMPlexMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans', sans-serif;
+  src: url("https://kforney.github.io/fonts/IBMPlexSans-Regular.ttf");
 }
 
 /* ==========================================================================
@@ -214,7 +231,7 @@ iframe[src*=itch]
 
 .hidden,
 [hidden] {
-  display: none !important;
+display: none !important;
 }
 
 /*
