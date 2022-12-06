@@ -86,13 +86,14 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-html {
-
+body, html {
+    height: 100%;
+    margin: 0;
 }
 
 body {
   background-color: #161A25;
+  background-image: url("/img/branding/backgroundSmall.png");
 }
 
 h1 {
@@ -101,6 +102,56 @@ h1 {
   src: url("/fonts/VT323-Regular.ttf");
   color: #FFBC42;
   text-align: center;
+}
+
+h2{
+  font-family: Oswald;
+  font-size: 64px;
+  src: url("/fonts/Oswald-Regular.ttf");
+  color: #78a1bb;
+  text-align: center;
+}
+
+h5 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 28px;
+  src: url("/fonts/IBMPlexMono-Regular.ttf");
+  color: #78a1bb;
+  text-align: center;
+}
+
+p {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 28px;
+  src: url("/fonts/IBMPlexSans-Regular.ttf");
+  color: #78a1bb;
+  text-align: center;
+}
+
+iframe[src*=youtube]
+{
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width:80%;
+}
+
+iframe[src*=itch]
+{
+  text-align: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 80%;
+}
+
+.parallax {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .bg-dark {
@@ -116,8 +167,30 @@ h1 {
   color: #FFBC42;
 }
 
+.card {
+  background-color: #161A25;
+  border-radius: 30px;
+}
+
 .text-shadow {
   text-shadow: #ffbc42 1px 1px 2px;
+}
+
+.youtube-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.youtube-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* ==========================================================================
