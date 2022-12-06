@@ -168,7 +168,7 @@ iframe[src*=itch]
 }
 
 .card {
-  background-color: #161A25;
+  background-color: RGBA(22, 26, 37, 70%);
   border-radius: 30px;
 }
 
