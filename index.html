@@ -24,14 +24,23 @@
 <body class="parallax">
 
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark shadow-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="img/branding/LunarPenguin_newPalette_transparency_brightDiamond.png" alt="Logo" class="navbar-logo">
-          Kaj Forney
-      </a>
-      <span class="navbar-text">
-        Portfolio
-      </span>
+    <a class="navbar-brand" href="#">
+      <img src="img/branding/LunarPenguin_newPalette_transparency_brightDiamond.png" alt="Logo" class="navbar-logo">
+        Kaj Forney
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <span class="navbar-text">|</span>
+      <a class="navbar-link" href="#games">GAMES</a>
+      <span class="navbar-text">|</span>
+      <a class="navbar-link" href="#art">ART</a>
+      <span class="navbar-text">|</span>
+      <a class="navbar-link" href="#social">SOCIAL</a>
+      <span class="navbar-text">|</span>
+      <a class="navbar-link" href="files/resume.pdf">RESUME</a>
     </div>
   </nav>
 
@@ -59,10 +68,64 @@
   <hr />
 
   <div class="container-lg">
+    <div class="row">
+      <div class="col">
+        <h1 id="games">GAMES</h1>
+      </div>
+    </div>
+
+    <div class="container-md card">
+      <div class="card-body">
+
+        <div class="row">
+          <div class="col-sm-4">
+            <h2>The Climb</h2>
+          </div>
+          <div class="col-sm-8">
+            <p>The Climb is a small game I created in Unity, originally as part of my work in my GIMM 100 course. In the game, you control a robot who must escape by climbing on tetrominoes as they fall from above. Later, I updated the game to add additional levels, as well as improved lighting using Unity's 2D Lighting system via the Universal Render Pipeline.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="youtube-container">
+            <iframe class="youtube-iframe" src="https://www.youtube.com/embed/N5unzGlC9ME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <iframe src="https://itch.io/embed/1308115?border_width=0&amp;bg_color=283044&amp;fg_color=78a1bb&amp;link_color=ffbc42&amp;border_color=283044" frameborder="0"><a href="https://lunarpenguin.itch.io/the-climb">The Climb by Lunar_Penguin</a></iframe>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container-md card mt-5">
+      <div class="card-body">
+        <div class="row mt-5">
+          <div class="col-sm-4">
+            <h2>Megashigi</h2>
+          </div>
+          <div class="col-sm-8">
+            <p>Megashigi is a game that I helped create in the Godot Engine, along with a few friends, as a birthday gift. My portion of the project included the implementation of the game's playable, interactive credits sequence, as well as general level design, and subtitles for the game's rap sequence.</p>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <iframe src="https://itch.io/embed/630032?border_width=0&amp;bg_color=283044&amp;fg_color=78a1bb&amp;link_color=ffbc42&amp;border_color=283044" frameborder="0"><a href="https://lopar.itch.io/megashigi">The Climb by Lunar_Penguin</a></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-5"></div>
+
+  <hr/>
+
+  <div class="container-lg">
 
     <div class="row">
       <div class="col">
-        <h1>ART</h1>
+        <h1 id="art">ART</h1>
       </div>
     </div>
 
@@ -154,61 +217,9 @@
 
   <hr class="mt-5">
 
-  <div class="container-lg">
-    <div class="row">
-      <div class="col">
-        <h1>GAMES</h1>
-      </div>
-    </div>
-
-    <div class="container-md card">
-      <div class="card-body">
-
-        <div class="row">
-          <div class="col-sm-4">
-            <h2>The Climb</h2>
-          </div>
-          <div class="col-sm-8">
-            <p>The Climb is a small game I created in Unity, originally as part of my work in my GIMM 100 course. In the game, you control a robot who must escape by climbing on tetrominoes as they fall from above. Later, I updated the game to add additional levels, as well as improved lighting using Unity's 2D Lighting system via the Universal Render Pipeline.</p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="youtube-container">
-            <iframe class="youtube-iframe" src="https://www.youtube.com/embed/N5unzGlC9ME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-
-        <div class="row mt-3">
-          <iframe src="https://itch.io/embed/1308115?border_width=0&amp;bg_color=283044&amp;fg_color=78a1bb&amp;link_color=ffbc42&amp;border_color=283044" frameborder="0"><a href="https://lunarpenguin.itch.io/the-climb">The Climb by Lunar_Penguin</a></iframe>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container-md card mt-5">
-      <div class="card-body">
-        <div class="row mt-5">
-          <div class="col-sm-4">
-            <h2>Megashigi</h2>
-          </div>
-          <div class="col-sm-8">
-            <p>Megashigi is a game that I helped create in the Godot Engine, along with a few friends, as a birthday gift. My portion of the project included the implementation of the game's playable, interactive credits sequence, as well as general level design, and subtitles for the game's rap sequence.</p>
-          </div>
-        </div>
-
-        <div class="row mt-3">
-          <iframe src="https://itch.io/embed/630032?border_width=0&amp;bg_color=283044&amp;fg_color=78a1bb&amp;link_color=ffbc42&amp;border_color=283044" frameborder="0"><a href="https://lopar.itch.io/megashigi">The Climb by Lunar_Penguin</a></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <hr class="mt-5">
-
   <div class="container-lg mw-25 w-50">
     <div class="row">
-      <h1>Other Places I Exist</h1>
+      <h1 id="social">Other Places I Exist</h1>
     </div>
     <div class="row">
       <div class="col">
