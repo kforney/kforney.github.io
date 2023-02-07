@@ -9,9 +9,8 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -24,24 +23,33 @@
 <body class="parallax">
 
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark shadow-lg">
-    <a class="navbar-brand" href="#">
-      <img src="img/branding/LunarPenguin_newPalette_transparency_brightDiamond.png" alt="Logo" class="navbar-logo">
-        Kaj Forney
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <a class="navbar-brand" href="#">
+        <img src="img/branding/LunarPenguin_newPalette_transparency_brightDiamond.png" alt="Logo" class="navbar-logo">
+          Kaj Forney
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <span class="navbar-text">|</span>
-      <a class="navbar-link" href="#games">GAMES</a>
-      <span class="navbar-text">|</span>
-      <a class="navbar-link" href="#art">ART</a>
-      <span class="navbar-text">|</span>
-      <a class="navbar-link" href="#social">SOCIAL</a>
-      <span class="navbar-text">|</span>
-      <a class="navbar-link" href="files/resume.pdf">RESUME</a>
-    </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="navbar-link" href="#games">GAMES</a>
+          </li>
+          <span class="navbar-text d-none d-sm-block">|</span>
+          <li class="nav-item">
+            <a class="navbar-link" href="#art">ART</a>
+          </li>
+          <span class="navbar-text d-none d-sm-block">|</span>
+          <li class="nav-item">
+            <a class="navbar-link" href="#social">SOCIAL</a>
+          </li>
+          <span class="navbar-text d-none d-sm-block">|</span>
+          <li class="nav-item">
+            <a class="navbar-link" href="files/resume.pdf">RESUME</a>
+          </li>
+        </ul>
+      </div>
   </nav>
 
   <div class="mt-5"></div>
@@ -290,14 +298,14 @@
 
   <footer class="footer bg-dark">
     <div class="container">
-      <span id="footerText" class="text-muted"></span>
+      <span id="footerText"></span>
     </div>
   </footer>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
   <script>
     document.getElementById("footerText").innerHTML = "Copyright © Kaj Forney 2018-" + new Date(Date.now()).getFullYear();
