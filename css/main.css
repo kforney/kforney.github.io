@@ -110,6 +110,9 @@ body {
   background-image: url("/img/branding/backgroundSmall.png");
 }
 
+a {
+  transition: all 0.4s ease 0s;
+}
 
 h1 {
 font-family: VT323;
@@ -255,6 +258,7 @@ iframe[src*=itch]
 
 .fa-brands {
   color: #FFBC42;
+  transition: all 0.4s ease 0s;
 }
 
 .fa-brands:hover {
