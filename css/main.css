@@ -12,9 +12,9 @@
    ========================================================================== */
 
 html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+	color: #222;
+	font-size: 1em;
+	line-height: 1.4;
 }
 
 /*
@@ -28,13 +28,13 @@ html {
  */
 
 ::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+	background: #b3d4fc;
+	text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+	background: #b3d4fc;
+	text-shadow: none;
 }
 
 /*
@@ -42,12 +42,12 @@ html {
  */
 
 hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
 }
 
 /*
@@ -62,7 +62,7 @@ iframe,
 img,
 svg,
 video {
-  vertical-align: middle;
+	vertical-align: middle;
 }
 
 /*
@@ -70,9 +70,9 @@ video {
  */
 
 fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
 
 /*
@@ -80,7 +80,7 @@ fieldset {
  */
 
 textarea {
-  resize: vertical;
+	resize: vertical;
 }
 
 /* ==========================================================================
@@ -101,13 +101,14 @@ textarea {
   #B17300     RGBA(177, 115, 0, 1)    HSL(39, 100%, 35%)
  */
 
-body, html {
-    margin: 0;
+body,
+html {
+	margin: 0;
 }
 
 body {
-  background-color: #161A25;
-  background-image: url("/img/branding/backgroundSmall.png");
+	background-color: #161a25;
+	background-image: url("/img/branding/backgroundSmall.png");
 }
 
 a {
@@ -115,145 +116,143 @@ a {
 }
 
 h1 {
-font-family: VT323;
-font-size: 64px;
-color: #FFBC42;
-text-align: center;
+	font-family: VT323;
+	font-size: 64px;
+	color: #ffbc42;
+	text-align: center;
 }
 
-h2{
-font-family: Oswald;
-font-size: 64px;
-color: #78a1bb;
-text-align: center;
+h2 {
+	font-family: Oswald;
+	font-size: 64px;
+	color: #78a1bb;
+	text-align: center;
 }
 
 h5 {
-font-family: 'IBM Plex Mono', monospace;
-font-size: 28px;
-color: #78a1bb;
-text-align: center;
+	font-family: "IBM Plex Mono", monospace;
+	font-size: 28px;
+	color: #78a1bb;
+	text-align: center;
 }
 
 p {
-font-family: 'IBM Plex Sans', sans-serif;
-font-size: 20px;
-color: #78a1bb;
-text-align: center;
+	font-family: "IBM Plex Sans", sans-serif;
+	font-size: 20px;
+	color: #78a1bb;
+	text-align: center;
 }
 
 hr {
-  border-top: #78a1bb dashed 4px;
-  max-width: 75%;
-  margin-left: auto;
-  margin-right: auto;
+	border-top: #78a1bb dashed 4px;
+	max-width: 75%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-iframe[src*=youtube]
-{
-  text-align: center;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  max-width:80%;
+iframe[src*="youtube"] {
+	text-align: center;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 80%;
 }
 
-iframe[src*=itch]
-{
-  text-align: center;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 80%;
+iframe[src*="itch"] {
+	text-align: center;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 80%;
 }
 
 .parallax {
-  position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .bg-dark {
-  --bs-dark-rgb: 40, 48, 68;
-  --bs-light-rgb: 120, 161, 187;
-  --bs-body-color: 120, 161, 187;
+	--bs-dark-rgb: 40, 48, 68;
+	--bs-light-rgb: 120, 161, 187;
+	--bs-body-color: 120, 161, 187;
 }
 
 .navbar-brand {
-  font-family: VT323;
-  font-size: 36px;
-  color: #FFBC42;
+	font-family: VT323;
+	font-size: 36px;
+	color: #ffbc42;
 }
 
 .navbar-text {
-  font-family: VT323;
-  font-size: 36px;
-  color: #78a1bb;
+	font-family: VT323;
+	font-size: 36px;
+	color: #78a1bb;
 }
 
 .navbar-logo {
-  max-height: 50px;
-  padding-right: 15px;
-  padding-left:15px;
-  padding-bottom: 6px;
+	max-height: 50px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-bottom: 6px;
 }
 
 .nav-item {
-  padding-top: 7px;
+	padding-top: 7px;
 }
 
 .navbar-brand:hover {
-  color: #78a1bb;
-  text-shadow: #B17300 2px 2px 3px;
+	color: #78a1bb;
+	text-shadow: #b17300 2px 2px 3px;
 }
 
 .navbar-link {
-  color: #FFBC42;
-  font-family: VT323, monospace;
-  font-size: 36px;
-  padding-left: 50px;
-  padding-right: 50px;
-  text-decoration: none;
+	color: #ffbc42;
+	font-family: VT323, monospace;
+	font-size: 36px;
+	padding-left: 50px;
+	padding-right: 50px;
+	text-decoration: none;
 }
 
 .navbar-link:hover {
-  color: #78a1bb;
-  text-shadow: #B17300 2px 2px 3px;
+	color: #78a1bb;
+	text-shadow: #b17300 2px 2px 3px;
 }
 
 .card {
-  background-color: RGBA(22, 26, 37, 70%);
-  border-radius: 30px;
-  box-shadow: #B17300 0px 0px 20px;
+	background-color: RGBA(22, 26, 37, 70%);
+	border-radius: 30px;
+	box-shadow: #b17300 0px 0px 20px;
 }
 
 .text-shadow {
-  text-shadow: #ffbc42 1px 1px 2px;
+	text-shadow: #ffbc42 1px 1px 2px;
 }
 
-.section-title{
-  padding-top: 5px;
-  padding-bottom: 10px;
-  text-shadow: #B17300 3px 3px 3px;
+.section-title {
+	padding-top: 5px;
+	padding-bottom: 10px;
+	text-shadow: #b17300 3px 3px 3px;
 }
 
 .youtube-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
 
 .youtube-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .fa-brands {
@@ -262,50 +261,51 @@ iframe[src*=itch]
 }
 
 .fa-brands:hover {
-  color: #78a1bb;
-  text-shadow: #B17300 2px 2px 3px;
+	color: #78a1bb;
+	text-shadow: #b17300 2px 2px 3px;
 }
 
 .footer {
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
 }
 
 #footerText {
-  color: steelblue;
+	color: steelblue;
 }
 
 @media screen and (min-width: 700px) {
-  .section-title {
-    font-size: 64px;
-  }
+	.section-title {
+		font-size: 64px;
+	}
 }
 
 @media screen and (max-width: 699px) {
-  .section-title {
-    font-size: 45px;
-  }
+	.section-title {
+		font-size: 45px;
+	}
 }
 
 @font-face {
-  font-family: VT323;
-  src: url("https://kforney.github.io/fonts/VT323-Regular.ttf");
+	font-family: VT323;
+	src: url("https://kforney.github.io/fonts/VT323-Regular.ttf");
 }
 
 @font-face {
-  font-family: Oswald;
-  src: url("https://kforney.github.io/fonts/Oswald-Regular.ttf");
+	font-family: Oswald;
+	src: url("https://kforney.github.io/fonts/Oswald-Regular.ttf");
 }
 
 @font-face {
-  font-family: 'IBM Plex Mono', monospace;
-  src: url("https://kforney.github.io/fonts/IBMPlexMono-Regular.ttf");
+	font-family: "IBM Plex Mono", monospace;
+	src: url("https://kforney.github.io/fonts/IBMPlexMono-Regular.ttf");
 }
 
 @font-face {
-  font-family: 'IBM Plex Sans', sans-serif;
-  src: url("https://kforney.github.io/fonts/IBMPlexSans-Regular.ttf");
+	font-family: "IBM Plex Sans", sans-serif;
+	src: url("https://kforney.github.io/fonts/IBMPlexSans-Regular.ttf");
 }
 
 /* ==========================================================================
@@ -318,7 +318,7 @@ iframe[src*=itch]
 
 .hidden,
 [hidden] {
-display: none !important;
+	display: none !important;
 }
 
 /*
@@ -331,16 +331,16 @@ display: none !important;
  */
 
 .sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	/* 1 */
 }
 
 /*
@@ -351,13 +351,13 @@ display: none !important;
 
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	white-space: inherit;
+	width: auto;
 }
 
 /*
@@ -365,7 +365,7 @@ display: none !important;
  */
 
 .invisible {
-  visibility: hidden;
+	visibility: hidden;
 }
 
 /*
@@ -382,12 +382,12 @@ display: none !important;
 
 .clearfix::before,
 .clearfix::after {
-  content: " ";
-  display: table;
+	content: " ";
+	display: table;
 }
 
 .clearfix::after {
-  clear: both;
+	clear: both;
 }
 
 /* ==========================================================================
@@ -397,14 +397,14 @@ display: none !important;
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+	/* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+	(-webkit-min-device-pixel-ratio: 1.25),
+	(min-resolution: 1.25dppx),
+	(min-resolution: 120dpi) {
+	/* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
@@ -414,71 +414,70 @@ display: none !important;
    ========================================================================== */
 
 @media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
+	*,
+	*::before,
+	*::after {
+		background: #fff !important;
+		color: #000 !important;
+		/* Black prints faster */
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
 
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
 
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
+	a[href]::after {
+		content: " (" attr(href) ")";
+	}
 
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
+	abbr[title]::after {
+		content: " (" attr(title) ")";
+	}
 
-  /*
+	/*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
+	a[href^="#"]::after,
+	a[href^="javascript:"]::after {
+		content: "";
+	}
 
-  pre {
-    white-space: pre-wrap !important;
-  }
+	pre {
+		white-space: pre-wrap !important;
+	}
 
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
 
-  /*
+	/*
    * Printing Tables:
    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  thead {
-    display: table-header-group;
-  }
+	thead {
+		display: table-header-group;
+	}
 
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
 
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
 
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
 }
-
