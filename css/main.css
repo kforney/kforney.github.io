@@ -273,13 +273,13 @@ iframe[src*=itch]
 }
 
 @media screen and (min-width: 700px) {
-  #social {
+  .section-title {
     font-size: 64px;
   }
 }
 
 @media screen and (max-width: 699px) {
-  #social {
+  .section-title {
     font-size: 45px;
   }
 }
