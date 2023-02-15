@@ -230,6 +230,12 @@ iframe[src*=itch]
   text-shadow: #ffbc42 1px 1px 2px;
 }
 
+.section-title{
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-shadow: #B17300 3px 3px 3px;
+}
+
 .youtube-container {
   position: relative;
   overflow: hidden;
