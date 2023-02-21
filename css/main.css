@@ -223,6 +223,20 @@ iframe[src*=itch]
   text-shadow: #B17300 2px 2px 3px;
 }
 
+.dropdown-menu{
+  background-color: RGBA(22, 26, 37, 70%);
+  box-shadow: #B17300 0px 0px 20px;
+}
+
+.dropdown-item {
+  color: #FFBC42;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.dropdown-item:hover{
+  background-color: #78a1bb;
+}
+
 .card {
   background-color: RGBA(22, 26, 37, 70%);
   border-radius: 30px;
@@ -243,7 +257,8 @@ iframe[src*=itch]
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  max-height: 60%;
+  padding-top: 50.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
 
 .youtube-iframe {
@@ -253,7 +268,8 @@ iframe[src*=itch]
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 100%;
+  height: 80%;
+  border-radius: 40px;
 }
 
 .fa-brands {
