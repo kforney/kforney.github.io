@@ -297,7 +297,7 @@ iframe[src*=itch] {
 }
 
 #footerText {
-    color: steelblue;
+    color: lightsteelblue;
 }
 
 @media screen and (min-width: 700px) {
