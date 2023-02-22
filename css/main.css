@@ -115,14 +115,14 @@ a {
 }
 
 h1 {
-    font-family: VT323;
+    font-family: VT323, monospace;
     font-size: 64px;
     color: #FFBC42;
     text-align: center;
 }
 
 h2 {
-    font-family: Oswald;
+    font-family: Oswald, "DejaVu Sans", sans-serif;
     font-size: 64px;
     color: #78a1bb;
     text-align: center;
@@ -180,13 +180,13 @@ iframe[src*=itch] {
 }
 
 .navbar-brand {
-    font-family: VT323;
+    font-family: VT323, monospace;
     font-size: 36px;
     color: #FFBC42;
 }
 
 .navbar-text {
-    font-family: VT323;
+    font-family: VT323, monospace;
     font-size: 36px;
     color: #78a1bb;
 }
@@ -313,13 +313,13 @@ iframe[src*=itch] {
 }
 
 @font-face {
-    font-family: VT323;
+    font-family: VT323, monospace;
     font-display: swap;
     src: url("https://kforney.github.io/fonts/VT323-Regular.ttf");
 }
 
 @font-face {
-    font-family: Oswald;
+    font-family: Oswald, "DejaVu Sans", sans-serif;
     font-display: swap;
     src: url("https://kforney.github.io/fonts/Oswald-Regular.ttf");
 }
