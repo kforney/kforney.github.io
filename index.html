@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Kaj Forney -- Portfolio</title>
-    <meta name="description" content="">
+    <meta name="description" content="Portfolio website of Kaj Forney.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="manifest" href="site.webmanifest">
@@ -116,11 +116,10 @@
             <div class="mt-4"></div>
 
             <div class="row">
-                <div class="youtube-container col">
-                    <iframe class="youtube-iframe" src="https://www.youtube.com/embed/N5unzGlC9ME"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen loading="lazy"></iframe>
+                <div class="col">
+                    <div class="youtube-video" data-embed="N5unzGlC9ME">
+                        <div class="playButton"></div>
+                    </div>
                 </div>
             </div>
 
@@ -195,12 +194,15 @@
             <div class="mt-5"></div>
 
             <div class="row">
-                <div class="col youtube-container">
-                <iframe class="youtube-iframe" width="560" height="315"
+                <div class="col">
+                    <div class="youtube-video" data-embed="nra31mia8Y0">
+                        <div class="playButton"></div>
+                    </div>
+                <!--<iframe class="youtube-iframe" width="560" height="315"
                         src="https://www.youtube-nocookie.com/embed/nra31mia8Y0" title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen loading="lazy"></iframe>
+                        allowfullscreen loading="lazy"></iframe>-->
             </div>
             </div>
         </div>
@@ -329,19 +331,13 @@
 
     <div class="row mt-5">
         <div class="col-sm">
-            <div class="youtube-container">
-                <iframe class="youtube-iframe" src="https://www.youtube.com/embed/LaloFVeUvOk"
-                        title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen loading="lazy"></iframe>
+            <div class="youtube-video" data-embed="LaloFVeUvOk">
+                <div class="playButton"></div>
             </div>
         </div>
         <div class="col-sm">
-            <div class="youtube-container">
-                <iframe class="youtube-iframe" src="https://www.youtube.com/embed/ahQPl9FOX7A"
-                        title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen loading="lazy"></iframe>
+            <div class="youtube-video" data-embed="ahQPl9FOX7A">
+                <div class="playButton"></div>
             </div>
         </div>
     </div>
@@ -435,7 +431,40 @@
         crossorigin="anonymous" defer></script>
 
 <script>
+    //For setting footer text with current copyright year.
     document.getElementById("footerText").innerHTML = "Copyright © Kaj Forney 2018-" + new Date(Date.now()).getFullYear();
+</script>
+
+<script>
+    //This script is for improving page performance by not loading YouTube iFrames until actually necessary.
+    //Code is originally from https://stackoverflow.com/questions/50410828/how-to-prevent-youtube-js-calls-from-slowing-down-page-load
+    //and was then modified by me as necessary.
+    let youtube = document.querySelectorAll( ".youtube-video" );
+
+    for (let i = 0; i < youtube.length; i++) {
+
+        let source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/maxresdefault.jpg";
+
+        let image = new Image();
+        image.src = source;
+        image.addEventListener( "load", function() {
+            youtube[ i ].appendChild( image );
+        }( i ) );
+
+        youtube[i].addEventListener( "click", function() {
+            let iframe = document.createElement( "iframe" );
+            iframe.setAttribute( "frameborder", "0" );
+            iframe.setAttribute( "allowfullscreen", "" );
+            iframe.setAttribute( "allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+            iframe.setAttribute( "src", "https://www.youtube-nocookie.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
+            this.innerHTML = "";
+            this.appendChild( iframe );
+        } );
+
+
+    }
+
+
 </script>
 
 </body>

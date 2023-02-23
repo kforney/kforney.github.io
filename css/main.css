@@ -149,14 +149,6 @@ hr {
     margin-right: auto;
 }
 
-iframe[src*=youtube] {
-    text-align: center;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 80%;
-}
-
 iframe[src*=itch] {
     text-align: center;
     display: block;
@@ -261,22 +253,67 @@ iframe[src*=itch] {
     text-shadow: #78a1bb 3px 3px 3px;
 }
 
-.youtube-container {
+/*Code for YouTube CSS is originally from https://stackoverflow.com/questions/50410828/how-to-prevent-youtube-js-calls-from-slowing-down-page-load
+and was then modified by me as necessary.*/
+
+.youtube-video {
+    background-color: #000;
+    margin-bottom: 30px;
     position: relative;
+    padding-top: 56.25%;
     overflow: hidden;
-    width: 100%;
-    padding-top: 50.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    cursor: pointer;
+    border-radius: 40px;
 }
 
-.youtube-iframe {
+.youtube-video img {
+    width: 100%;
+    top: 0%;
+    left: 0;
+    opacity: 0.7;
+}
+
+.youtube-video .playButton {
+    width: 90px;
+    height: 60px;
+    background-color: #333;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    opacity: 0.8;
+    border-radius: 6px;
+}
+
+.youtube-video .playButton:before {
+    content: "";
+    border-style: solid;
+    border-width: 15px 0 15px 26.0px;
+    border-color: transparent transparent transparent #fff;
+}
+
+.youtube-video img,
+.youtube-video .playButton {
+    cursor: pointer;
+}
+
+.youtube-video img,
+.youtube-video iframe,
+.youtube-video .playButton,
+.youtube-video .playButton:before {
     position: absolute;
+}
+
+.youtube-video .playButton,
+.youtube-video .playButton:before {
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.youtube-video iframe {
+    height: 100%;
+    width: 100%;
     top: 0;
     left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 40px;
 }
 
 .fa-brands {
