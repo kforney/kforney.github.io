@@ -276,8 +276,8 @@ and was then modified by me as necessary.*/
 }
 
 .youtube-video .playButton {
-    width: 90px;
-    height: 60px;
+    width: 120px;
+    height: 90px;
     background-color: #333;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
     z-index: 1;
@@ -288,8 +288,12 @@ and was then modified by me as necessary.*/
 .youtube-video .playButton:before {
     content: "";
     border-style: solid;
-    border-width: 15px 0 15px 26.0px;
+    border-width: 30px 0 30px 52px;
     border-color: transparent transparent transparent #fff;
+}
+
+.youtube-video:hover .playButton {
+    background-color: #FFBC42;
 }
 
 .youtube-video img,
