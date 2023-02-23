@@ -246,6 +246,7 @@ iframe[src*=itch] {
 .game-link {
     text-decoration: none;
     color: #78a1bb;
+    font-family: "VT323",sans-serif;
 }
 
 .game-link:hover {
@@ -264,6 +265,7 @@ and was then modified by me as necessary.*/
     overflow: hidden;
     cursor: pointer;
     border-radius: 40px;
+    box-shadow: #B17300 0px 0px 10px;
 }
 
 .youtube-video img {
