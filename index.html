@@ -455,8 +455,7 @@
     let youtube = document.querySelectorAll(".youtube-video");
 
     for (let i = 0; i < youtube.length; i++) {
-
-        let source = "https://img.youtube.com/vi/" + youtube[i].dataset.embed + "/maxresdefault.jpg";
+        let source = "https://i.ytimg.com/vi_webp/" + youtube[i].dataset.embed + "/maxresdefault.webp";
 
         let image = new Image();
         image.src = source;
@@ -475,8 +474,6 @@
             this.innerHTML = "";
             this.appendChild(iframe);
         });
-
-
     }
 
 
