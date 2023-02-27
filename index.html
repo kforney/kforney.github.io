@@ -461,6 +461,7 @@
         let image = new Image();
         image.src = source;
         image.alt = "YouTube thumbnail image.";
+        image.loading = "lazy";
         image.addEventListener("load", function () {
             youtube[i].appendChild(image);
         }(i));
