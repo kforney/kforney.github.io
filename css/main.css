@@ -171,6 +171,10 @@ iframe[src*=itch] {
     --bs-body-color: 120, 161, 187;
 }
 
+.main-logo {
+    max-height: 300px;
+}
+
 .navbar-brand {
     font-family: VT323, monospace;
     font-size: 36px;
