@@ -275,6 +275,7 @@ and was then modified by me as necessary.*/
     cursor: pointer;
     border-radius: 40px;
     box-shadow: #B17300 0px 0px 10px;
+    border: #FFBC42 2px solid;
 }
 
 .youtube-video img {
