@@ -67,13 +67,16 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-1"></div>
-            <div class="col-4">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-3">
                 <img class="main-logo" src="img/branding/LunarPenguin_newPalette_transparency.webp"/>
             </div>
-            <div class="col-7">
-                <p>Greetings! I am <span title="pronounced 'Kai'">Kaj Forney</span> (he/him). I am a human who enjoys pixel art, programming, and penguins.</p>
-                <p>I am currently a sophomore student at Boise State University, majoring in Games, Interactive Media, and Mobile Technology.<br>My passion is for using games to help make the world a brighter place.</p>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-7">
+                <p>Greetings! I am <span title="pronounced 'Kai'">Kaj Forney</span> (he/him). I am a human who enjoys
+                    pixel art, programming, and penguins.</p>
+                <p>I am currently a sophomore student at Boise State University, majoring in Games, Interactive Media,
+                    and Mobile Technology.<br>My passion is for using games to help make the world a brighter place.</p>
                 <p>My current primary focus is learning and building my skills in level design and 3D modeling.</p>
                 <p>This site displays a few of the things I've made or helped to make.</p>
             </div>
@@ -148,8 +151,9 @@
                 </div>
                 <div class="col-sm-8">
                     <p>This is a tiny game I made for a community game jam in 2020. I primarily made it to work on
-                        learning the basics of the Godot Engine. Thus, it isn't the most polished game, but it's still
+                        learning the basics of a new engine. Thus, it isn't the most polished game, but it's still
                         one I enjoyed making.</p>
+                    <p>This project was my first experience using the open-source Godot Engine.</p>
                 </div>
 
                 <div class="mt-4"></div>
@@ -194,7 +198,8 @@
                     <p>I assisted in a minor role with Mr. Saitou, a game created by Laura Shigihara (Morizora Studios).
                         My role in the project primarily involved organizing a team of various testers and translators,
                         as well as providing additional QA testing across Windows, Linux, and Nintendo Switch.</p>
-                    <p>In addition, I created the localized versions of the game's graphical assets used for eight of the
+                    <p>In addition, I created the localized versions of the game's graphical assets used for eight of
+                        the
                         languages for the PC release, while maintaining their original visual style.</p>
                 </div>
             </div>
@@ -202,47 +207,98 @@
             <div class="mt-5"></div>
 
             <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-8">
-                    <div class="youtube-video" data-embed="nra31mia8Y0">
-                        <div class="playButton"></div>
+                <div class="col">
+                    <div id="saitouCarousel" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#saitouCarousel" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#saitouCarousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#saitouCarousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#saitouCarousel" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/art/Long%20Day%20Club_en.png" class="d-block w-100 saitouItem"
+                                     alt="" loading="lazy">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="text-shadow"></h5>
+                                    <p class="text-shadow"></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/art/Long%20Day%20Club_it.png" class="d-block w-100 saitouItem" alt=""
+                                     loading="lazy">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="text-shadow"></h5>
+                                    <p class="text-shadow"></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/art/Long%20Day%20Club_uk.png" class="d-block w-100 saitouItem" alt=""
+                                     loading="lazy">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="text-shadow"></h5>
+                                    <p class="text-shadow"></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/art/Long%20Day%20Club_vi.png" class="d-block w-100 saitouItem" alt=""
+                                     loading="lazy">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="text-shadow"></h5>
+                                    <p class="text-shadow"></p>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#saitouCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#saitouCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-2"></div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="container-md card mt-5">
-    <div class="card-body">
-        <div class="row mt-5">
-            <div class="col-sm-4">
-                <h2>
-                    <a class="game-link" href="https://lopar.itch.io/megashigi">Mega<wbr>shigi</a>
-                </h2>
-                <hr/>
-                <p>[2020, Win/Mac/Linux]</p>
+    <div class="container-md card mt-5">
+        <div class="card-body">
+            <div class="row mt-5">
+                <div class="col-sm-4">
+                    <h2>
+                        <a class="game-link" href="https://lopar.itch.io/megashigi">Mega
+                            <wbr>
+                            shigi</a>
+                    </h2>
+                    <hr/>
+                    <p>[2020, Win/Mac/Linux]</p>
+                </div>
+                <div class="col-sm-8">
+                    <p>Megashigi is a game that I helped create using the Godot Engine, along with several friends, as a
+                        birthday gift. My portion of the project included the implementation of the game's playable,
+                        interactive credits sequence, as well as general level design, and subtitles for the game's boss
+                        rap sequence.</p>
+                    <p>This project provided me with an opportunity to dive into the Godot Engine further, as well as
+                        learn to work on a complex project as part of a team.</p>
+                </div>
             </div>
-            <div class="col-sm-8">
-                <p>Megashigi is a game that I helped create using the Godot Engine, along with several friends, as a
-                    birthday gift. My portion of the project included the implementation of the game's playable,
-                    interactive credits sequence, as well as general level design, and subtitles for the game's boss
-                    rap sequence.</p>
-                <p>This project provided me with an opportunity to dive into the Godot Engine further, as well as learn to work on a complex project as part of a team.</p>
+
+            <div class="mt-4"></div>
+
+            <div class="row mt-3">
+                <iframe loading="lazy"
+                        src="https://itch.io/embed/630032?border_width=0&amp;bg_color=12161f&amp;fg_color=78a1bb&amp;link_color=ffbc42&amp;border_color=283044"
+                        aria-label="Megashigi on Itch.io">
+                    <a href="https://lopar.itch.io/megashigi">MEGASHIGI by Lopar</a></iframe>
             </div>
-        </div>
-
-        <div class="mt-4"></div>
-
-        <div class="row mt-3">
-            <iframe loading="lazy"
-                    src="https://itch.io/embed/630032?border_width=0&amp;bg_color=12161f&amp;fg_color=78a1bb&amp;link_color=ffbc42&amp;border_color=283044"
-                    aria-label="Megashigi on Itch.io">
-                <a href="https://lopar.itch.io/megashigi">MEGASHIGI by Lopar</a></iframe>
         </div>
     </div>
-</div>
 </div>
 
 <div id="art"></div>

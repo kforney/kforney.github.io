@@ -172,7 +172,11 @@ iframe[src*=itch] {
 }
 
 .main-logo {
-    max-height: 300px;
+    width: 100%;
+    min-width: 300px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navbar-brand {
@@ -234,6 +238,7 @@ iframe[src*=itch] {
 .card {
     background-color: RGBA(22, 26, 37, 70%);
     border-radius: 30px;
+    border: #FFBC42 2px solid;
     box-shadow: #B17300 0px 0px 20px;
 }
 
@@ -324,6 +329,20 @@ and was then modified by me as necessary.*/
     width: 100%;
     top: 0;
     left: 0;
+}
+
+#saitouCarousel {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 480px;
+    box-shadow: #B17300 0px 0px 12px;
+    border: #FFBC42 2px solid;
+    border-radius: 30px;
+}
+
+.saitouItem {
+    border-radius: 30px;
+    overflow: hidden;
 }
 
 .fa-brands {
